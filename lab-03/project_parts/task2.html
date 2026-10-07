@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2 - Мондріан (Оригінал)</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 40px;
+        }
+        
+        .mondrian {
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            width: 424px;
+            height: 424px;
+            max-width: 424px;
+            max-height: 424px;
+            table-layout: fixed;
+        }
+        
+        .mondrian td {
+            padding: 0;
+        }
+
+        .line-r  { border-right: 8px solid #000000; }
+        .line-b  { border-bottom: 8px solid #000000; }
+        .line-rb { border-right: 8px solid #000000; border-bottom: 8px solid #000000; }
+
+        .bg-red    { background-color: #ff5b2d; }
+        .bg-yellow { background-color: #fffa69; }
+        .bg-blue   { background-color: #074481; }
+        .bg-black  { background-color: #000000; }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" style="font-size: 16px; display: block; margin-bottom: 20px;">Повернутись на головну</a>
+
+    <table class="mondrian">
+        
+        <!-- РЯД 1 -->
+        <tr>
+            <td class="line-rb" colspan="2" style="width: 134px; height: 30px;"></td>
+            <td class="line-rb"></td>
+            <td class="line-b bg-yellow" colspan="2" style="height: 30px;"></td>
+        </tr>
+
+        <!-- РЯД 2 (Верхня частина квадрата: висота 70px) -->
+        <tr>
+            <td class="line-rb" style="width: 134px; height: 70px;"></td>
+            <td class="line-rb bg-red" colspan="2" rowspan="2"></td> <!-- Ширина 230px, висота буде 70+160=230px -->
+            <td class="line-b bg-yellow" colspan="2" style="height: 70px;"></td>
+        </tr>
+
+        <!-- РЯД 3 (Нижня частина квадрата: Збільшуємо висоту до 160px) -->
+        <tr>
+            <td class="line-rb" style="height: 90px;"></td> <!-- Було 130px, стало 160px -->
+            <td class="line-rb"></td>
+            <td class="line-b"></td>
+        </tr>
+
+        <!-- РЯД 4 (Зменшуємо на 15px для компенсації) -->
+        <tr>
+            <td class="line-rb" style="height: 35px;"></td> <!-- Було 50px, стало 35px -->
+            <td class="line-rb bg-black"></td>
+            <td class="line-rb bg-black"></td>
+            <td class="line-b" colspan="2"></td>
+        </tr>
+
+        <!-- РЯД 5 (Зменшуємо на 15px для компенсації) -->
+        <tr>
+            <td class="line-rb" style="height: 35px;"></td> <!-- Було 50px, стало 35px -->
+            <td class="line-rb bg-black"></td>
+            <td class="line-rb bg-black"></td>
+            <td class="line-b" colspan="2"></td>
+        </tr>
+
+        <!-- РЯД 6 -->
+        <tr>
+            <td class="line-r bg-yellow" rowspan="3" style="height: 90px;"></td>
+            <td class="line-rb" colspan="2" style="height: 40px;"></td>
+            <td class="bg-blue" colspan="2" rowspan="3"></td>
+        </tr>
+
+        <!-- РЯД 7 -->
+        <tr>
+            <td class="line-rb bg-black" colspan="2" style="height: 30px;"></td>
+        </tr>
+
+        <!-- РЯД 8 -->
+        <tr>
+            <td class="line-r" colspan="2" style="height: 20px;"></td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>
