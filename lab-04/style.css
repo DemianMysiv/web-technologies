@@ -1,0 +1,211 @@
+/* 2. Універсальний селектор для всього контенту */
+* {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* 3. Селектори тегів */
+p {
+    color: green;
+    text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+/* 4. Селектор класу для зміни кольору тексту на червоний */
+.color_red {
+    color: red;
+}
+
+/* 5. Селектор класу для заборони перенесення рядка */
+.white_space {
+    white-space: nowrap;
+}
+
+/* 6. Відповідний селектор ідентифікатора для курсиву та жирності */
+#italic_bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* 7. Селектор класу для додавання тіні */
+.text_shadow {
+    text-shadow: 5px -5px 3px brown;
+}
+
+/* 8. Селектор класу для 1-го блочного елементу (перекреслення, регістр, відступ) */
+.div1_style {
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-indent: 50px;
+}
+
+/* 9. Селектор класу для 2-го блочного елементу (інтервали символів та слів) */
+.div2_style {
+    letter-spacing: 30px;
+    word-spacing: 50px;
+}
+
+/* ================= ЗАВДАННЯ 2 ================= */
+
+#recipe_container {
+    width: 800px;
+    margin: 20px auto;
+    border: 1px solid blue;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.shadow_title {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.italic_bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.italic_text {
+    font-style: italic;
+}
+
+.line_height {
+    line-height: 30px;
+}
+
+.underline_text {
+    text-decoration: underline;
+}
+
+.line_through {
+    text-decoration: line-through;
+}
+
+.bg_yellow {
+    background-color: yellow;
+}
+
+.green_line {
+    background-color: green;
+    height: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* ================= ЗАВДАННЯ 3 ================= */
+
+a {
+    color: purple;
+}
+
+.main_menu {
+    color: green;
+}
+
+.berry_list {
+    list-style-type: square;
+}
+
+.veg_list {
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%23433d54" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>'); 
+}
+
+
+
+
+
+ul > li > ul {
+    list-style-type: none;
+}
+
+
+
+
+
+.berry_list a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+/* ================= ЗАВДАННЯ 4 ================= */
+
+.text-background span {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+div .text-background span {
+    background-color: yellow;
+}
+
+
+
+span > span {
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+ol > span > span {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Правило 5: Комбінатор дочірнього елементу двох тегів (section > p) */
+section > p {
+    text-shadow: 2px 2px 4px lightcoral;
+    text-indent: 50px;
+}
+
+/* Скасування відступу для другого абзацу секції (для блоку "Різне") */
+section > p.no-indent {
+    text-indent: 0;
+}
+
+/* Правило 6: Комбінатор дочірнього елементу двох тегів (li > ul) */
+li > ul {
+    list-style-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="%23433d54" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>');
+}
+
+/* Правило 7: Комбінатор дочірнього елементу тегу та класу (div > .text-background) */
+div > .text-background {
+    word-spacing: 50px;
+}
+
+/* Правило 8: Комбінатор дочірнього елементу класу та тегу (.text-bold > p) */
+.text-bold > p {
+    font-weight: bold;
+}
+
+/* Правило 9: Комбінатор дочірнього елементу класу та двох тегів (.text-bold > section > p) */
+.text-bold > section > p {
+    line-height: 45px;
+}
+
+/* Правило 10: Комбінатор наступного сусіднього елемента (img + p) */
+img + p {
+    background-color: brown;
+    color: white;
+}
+
+/* Правило 11: Комбінатор всіх сусідніх елементів одного рівня (section ~ p) */
+section ~ p {
+    color: red;
+}
