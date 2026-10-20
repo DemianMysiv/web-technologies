@@ -1,0 +1,160 @@
+/* Налаштування загального блоку div */
+.main-block {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+}
+
+/* Заголовок 1-го рівня */
+h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/* Загальні вимоги до маркованого списку */
+ul {
+    list-style-position: inside;
+    list-style-type: none; /* Прибираємо стандартні маркери */
+    margin: 0;
+}
+
+/* Використання зображення як маркера через властивості фону */
+li {
+    background-image: url('icons/marker.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    padding-left: 25px; /* Відступ тексту від маркера-картинки */
+}
+
+/* Маркований список 1-го рівня */
+ul.level-1 {
+    background-color: rgb(103, 158, 128);
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+/* Маркований список 2-го рівня */
+ul.level-2 {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    padding-left: 40px;
+}
+
+ul.level-2 > li {
+    margin-bottom: 10px;
+}
+
+/* Загальні налаштування елемента span */
+span {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Елемент span в маркерованому списку 1-го рівня */
+ul.level-1 > li > span {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+/* Елемент span в маркерованому списку 2-го рівня */
+ul.level-2 > li > span {
+    background-color: rgb(218, 106, 32);
+}
+
+
+/* ================= ЗАВДАННЯ 1 ================= */
+
+/* Головний блок (div) */
+.travel-plan {
+    background-color: rgb(255, 165, 0);
+    width: 500px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Заголовок 1-го рівня */
+.travel-plan h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+/* Загальні вимоги до списків */
+.travel-plan ul {
+    list-style-position: inside;
+    list-style-type: none; /* Прибираємо стандартні крапки */
+    margin: 0;
+}
+
+/* Налаштування маркованого списку 1-го рівня */
+ul.level-1 {
+    background-color: rgb(103, 158, 128);
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+/* Налаштування маркованого списку 2-го рівня */
+ul.level-2 {
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgb(153, 180, 102);
+    padding-left: 40px;
+}
+
+/* Відступ від кожного елемента списку 2-го рівня */
+ul.level-2 li {
+    margin-bottom: 10px;
+}
+
+/* Загальні налаштування для span */
+.travel-plan span {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+/* Елемент span 1-го рівня */
+.span-level-1 {
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(199, 124, 106);
+    margin-bottom: 10px;
+}
+
+/* Елемент span 2-го рівня */
+.span-level-2 {
+    background-color: rgb(218, 106, 32);
+}
+
+/* --- Налаштування іконок як маркерів (background-image) --- */
+.travel-plan li {
+    background-repeat: no-repeat;
+    background-size: 24px; /* Розмір іконки */
+    padding-left: 35px;    /* Відступ тексту від іконки */
+}
+
+/* Іконка для списку 1-го рівня (притиснута до верху, щоб рівнятись зі span) */
+.icon-main {
+    background-image: url('icons/checklist.png');
+    background-position: left top 10px; 
+}
+
+/* Іконки для списку 2-го рівня (по центру рядка) */
+ul.level-2 li {
+    background-position: left center;
+}
+
+.icon-route    { background-image: url('icons/route.png'); }
+.icon-flight   { background-image: url('icons/flight.png'); }
+.icon-hotel    { background-image: url('icons/hotel.png'); }
+.icon-car      { background-image: url('icons/car.png'); }
+.icon-bar      { background-image: url('icons/bar.png'); }
+.icon-casino   { background-image: url('icons/casino.png'); }
+.icon-museum   { background-image: url('icons/museum.png'); }
+.icon-festival { background-image: url('icons/festival.png'); }
