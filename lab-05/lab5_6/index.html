@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 6 — Сайт-візитівка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <h1>Мій сайт-візитівка</h1>
+    <p>Демонстрація CSS-властивостей блоків та фону.</p>
+
+    <h2>1. Властивість display</h2>
+
+    <h3>display: inline</h3>
+    <section class="inline-demo">
+        <div>Тег 1</div>
+        <div>Тег 2</div>
+        <div>Тег 3</div>
+        <div>Тег 4</div>
+        <div>Тег 5</div>
+    </section>
+
+    <h3>display: block</h3>
+    <section class="block-demo">
+        <span>Тег 1</span>
+        <span>Тег 2</span>
+        <span>Тег 3</span>
+        <span>Тег 4</span>
+        <span>Тег 5</span>
+    </section>
+
+    <h2>2. Повторення фону</h2>
+
+    <section class="repeat-demo">
+        <div>repeat-x</div>
+        <div>repeat-y</div>
+        <div>space</div>
+        <div>round</div>
+    </section>
+
+    <h2>3. Масштабування фону</h2>
+
+    <section class="size-demo">
+        <div>background-size: contain</div>
+        <div>background-size: cover</div>
+    </section>
+
+    <h2>4. Прокручування фону</h2>
+
+    <section class="attachment-demo">
+        <div>
+            <strong>background-attachment: scroll</strong>
+            <p>
+                Це довгий текст для демонстрації прокручування.
+                Фонове зображення залишається прив'язаним
+                до області блоку. Під час прокручування
+                вміст переміщується поверх фонового зображення.
+                Повторюємо текст для створення переповнення.
+                Це додатковий текст для демонстрації.
+                Прокрутіть блок, щоб побачити результат.
+                Фон не переміщується разом із текстом.
+            </p>
+        </div>
+
+        <div>
+            <strong>background-attachment: local</strong>
+            <p>
+                Це довгий текст для демонстрації прокручування.
+                Фонове зображення залишається прив'язаним
+                до вмісту блоку. Під час прокручування
+                фон переміщується разом із текстом.
+                Повторюємо текст для створення переповнення.
+                Це додатковий текст для демонстрації.
+                Прокрутіть блок, щоб побачити результат.
+                Фон переміщується разом із вмістом.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
