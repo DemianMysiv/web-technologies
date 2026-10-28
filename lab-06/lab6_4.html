@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 6 - Завдання 4</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <!-- Горизонтальна фіксована навігація -->
+    <nav class="horizontal-nav" aria-label="Горизонтальна навігація">
+        <ul class="horizontal-menu">
+
+            <li class="horizontal-item active">
+                <a href="#home" aria-label="Головна" aria-current="page">
+                    <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                </a>
+            </li>
+
+            <li class="horizontal-item">
+                <a href="#search" aria-label="Пошук">
+                    <span class="material-symbols-outlined" aria-hidden="true">search</span>
+                </a>
+
+                <ul class="horizontal-submenu">
+                    <li><a href="#search">Пошук на сайті</a></li>
+                    <li><a href="#projects">Пошук проєктів</a></li>
+                    <li><a href="#contacts">Пошук контактів</a></li>
+                </ul>
+            </li>
+
+            <li class="horizontal-item">
+                <a href="#messages" aria-label="Повідомлення">
+                    <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+                </a>
+
+                <ul class="horizontal-submenu">
+                    <li><a href="#messages">Вхідні повідомлення</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                    <li><a href="#settings">Налаштування пошти</a></li>
+                </ul>
+            </li>
+
+            <li class="horizontal-item horizontal-item-right">
+                <a href="#profile" aria-label="Профіль">
+                    <span class="material-symbols-outlined" aria-hidden="true">account_circle</span>
+                </a>
+
+                <ul class="horizontal-submenu horizontal-submenu-right">
+                    <li><a href="#profile">Мій профіль</a></li>
+                    <li><a href="#settings">Налаштування</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Вертикальна фіксована навігація -->
+    <nav class="vertical-nav" aria-label="Вертикальна навігація">
+        <ul class="vertical-menu">
+
+            <li class="vertical-item active">
+                <a href="#home" aria-current="page">
+                    <span class="material-symbols-outlined" aria-hidden="true">home</span>
+                    <span>Головна</span>
+                </a>
+            </li>
+
+            <li class="vertical-item">
+                <a href="#about">
+                    <span class="material-symbols-outlined" aria-hidden="true">info</span>
+                    <span>Про нас</span>
+                </a>
+
+                <!-- Другий рівень -->
+                <ul class="vertical-submenu">
+                    <li>
+                        <a href="#team">Наша команда</a>
+                    </li>
+
+                    <li class="vertical-item">
+                        <a href="#history">Історія компанії ▸</a>
+
+                        <!-- Третій рівень -->
+                        <ul class="vertical-submenu">
+                            <li><a href="#history">Заснування</a></li>
+                            <li><a href="#development">Розвиток</a></li>
+                            <li><a href="#achievements">Досягнення</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contacts">Наші контакти</a></li>
+                </ul>
+            </li>
+
+            <li class="vertical-item">
+                <a href="#projects">
+                    <span class="material-symbols-outlined" aria-hidden="true">work</span>
+                    <span>Проєкти</span>
+                </a>
+
+                <!-- Другий рівень -->
+                <ul class="vertical-submenu">
+                    <li class="vertical-item">
+                        <a href="#web-projects">Вебпроєкти ▸</a>
+
+                        <!-- Третій рівень -->
+                        <ul class="vertical-submenu">
+                            <li><a href="#html">HTML</a></li>
+                            <li><a href="#css">CSS</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#mobile">Мобільні застосунки</a></li>
+                </ul>
+            </li>
+
+            <li class="vertical-item">
+                <a href="#contacts">
+                    <span class="material-symbols-outlined" aria-hidden="true">call</span>
+                    <span>Контакти</span>
+                </a>
+            </li>
+
+            <li class="vertical-item">
+                <a href="#settings">
+                    <span class="material-symbols-outlined" aria-hidden="true">settings</span>
+                    <span>Налаштування</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- Основний вміст сторінки -->
+    <main class="page-content">
+
+        <section class="content-section" id="home">
+            <h1>Лабораторна робота №6</h1>
+            <h2>Завдання 4 — Навігаційні панелі</h2>
+            <p>
+                На цій сторінці реалізовано горизонтальну та вертикальну
+                навігаційні панелі з випадними пунктами меню.
+            </p>
+            <p>
+                Наведіть курсор на піктограми верхньої панелі або
+                пункти вертикального меню, щоб побачити підменю.
+            </p>
+        </section>
+
+        <!-- Липка навігаційна панель -->
+        <nav class="sticky-nav" aria-label="Липка навігація">
+            <ul class="sticky-menu">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#projects">Проєкти</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <section class="content-section" id="about">
+            <h2>Про нас</h2>
+            <p>
+                Цей розділ демонструє роботу навігації та переходів
+                між частинами сторінки.
+            </p>
+            <p>
+                Горизонтальна панель залишається зафіксованою
+                у верхній частині вікна браузера.
+            </p>
+        </section>
+
+        <section class="content-section" id="projects">
+            <h2>Наші проєкти</h2>
+            <p>
+                У вертикальній панелі розділ «Проєкти»
+                містить другий і третій рівні вкладеності.
+            </p>
+            <p>
+                Для відображення вкладених меню використовуються
+                CSS-властивості position, visibility та псевдоклас :hover.
+            </p>
+        </section>
+
+        <section class="content-section" id="search">
+            <h2>Пошук</h2>
+            <p>Розділ для демонстрації переходів через верхнє меню.</p>
+        </section>
+
+        <section class="content-section" id="messages">
+            <h2>Повідомлення</h2>
+            <p>Розділ повідомлень.</p>
+        </section>
+
+        <section class="content-section" id="contacts">
+            <h2>Контакти</h2>
+            <p>Цей розділ демонструє навігацію до кінця сторінки.</p>
+        </section>
+
+        <section class="content-section" id="settings">
+            <h2>Налаштування</h2>
+            <p>Приклад додаткового розділу навігації.</p>
+        </section>
+
+        <section class="content-section" id="profile">
+            <h2>Мій профіль</h2>
+            <p>Приклад сторінки профілю користувача.</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
