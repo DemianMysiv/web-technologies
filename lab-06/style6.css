@@ -1,0 +1,398 @@
+
+/* ========================================
+   1. Загальні стилі
+   ======================================== */
+
+.page {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #333;
+}
+
+/* ========================================
+   2. Верхня панель
+   ======================================== */
+
+.header {
+    height: 75px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+    height: 100%;
+    padding: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-brand {
+    font-size: 23px;
+    font-weight: bold;
+    color: #4285f4;
+}
+
+.header-navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    color: #555;
+    font-size: 17px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.header-link:hover,
+.header-link:focus {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.header-notification {
+    font-size: 25px;
+}
+
+.header-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #e8f0fe;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header-avatar:hover,
+.header-avatar:focus {
+    background-color: #d2e3fc;
+    box-shadow: 0 0 0 3px #a8c7fa;
+}
+
+/* ========================================
+   3. Кнопка відкривання попапу
+   ======================================== */
+
+.popup-shell {
+    position: relative;
+    width: 46px;
+    height: 46px;
+}
+
+.popup-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.popup-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.popup-toggle:hover + .popup-trigger {
+    background-color: #e8f0fe;
+}
+
+.popup-toggle:focus + .popup-trigger {
+    outline: 3px solid #4285f4;
+    outline-offset: 2px;
+}
+
+.popup-toggle:checked + .popup-trigger {
+    background-color: #d2e3fc;
+}
+
+/* Іконка з дев'яти квадратів */
+
+.grid-icon {
+    display: grid;
+    grid-template-columns: repeat(3, 6px);
+    grid-template-rows: repeat(3, 6px);
+    gap: 3px;
+}
+
+.grid-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #666;
+    border-radius: 1px;
+}
+
+/* ========================================
+   4. Спливаюче вікно
+   ======================================== */
+
+.popup {
+    position: absolute;
+    top: 58px;
+    right: -115px;
+    width: 430px;
+    max-width: calc(100vw - 30px);
+
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+
+    transition: opacity 0.2s;
+}
+
+.popup::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 128px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    transform: rotate(45deg);
+}
+
+.popup-shell:has(.popup-toggle:checked) .popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================================
+   5. Прокручуваний контейнер
+   ======================================== */
+
+.popup-scroll {
+    position: relative;
+    max-height: 495px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 18px 12px;
+    border-radius: 12px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #bcbcbc #f2f2f2;
+}
+
+.popup-scroll:focus {
+    outline: 3px solid #4285f4;
+    outline-offset: -3px;
+}
+
+/* ========================================
+   6. Сітка застосунків
+   ======================================== */
+
+.apps-grid,
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.app-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 103px;
+    padding: 10px 5px;
+
+    text-decoration: none;
+    color: #555;
+    border: 2px solid transparent;
+    border-radius: 8px;
+
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.app-icon {
+    font-size: 43px;
+    line-height: 1.2;
+}
+
+.app-name {
+    font-size: 15px;
+    text-align: center;
+}
+
+.app-item:hover {
+    background-color: #f1f5ff;
+    border-color: #d2e3fc;
+}
+
+.app-item:focus {
+    outline: 3px solid #4285f4;
+    outline-offset: -3px;
+    background-color: #e8f0fe;
+}
+
+/* ========================================
+   7. Кнопка More
+   ======================================== */
+
+.more-control {
+    position: relative;
+    height: 50px;
+    margin-top: 12px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+.more-toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.more-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+}
+
+.more-toggle:hover + .more-label {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.more-toggle:focus + .more-label {
+    outline: 3px solid #4285f4;
+    outline-offset: -3px;
+}
+
+.more-close {
+    display: none;
+}
+
+/* ========================================
+   8. Додаткові застосунки
+   ======================================== */
+
+.extra-grid {
+    display: none;
+    padding-top: 15px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.popup:has(.more-toggle:checked) .extra-grid {
+    display: grid;
+}
+
+.popup:has(.more-toggle:checked) .more-open {
+    display: none;
+}
+
+.popup:has(.more-toggle:checked) .more-close {
+    display: inline;
+}
+
+/* ========================================
+   9. Основний вміст
+   ======================================== */
+
+.main-content {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.page-title {
+    color: #1a73e8;
+    font-size: 32px;
+}
+
+.page-subtitle {
+    color: #333;
+    font-size: 23px;
+}
+
+.page-description {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ========================================
+   10. Адаптація до невеликого екрана
+   ======================================== */
+
+@media (max-width: 650px) {
+    .header-content {
+        padding: 0 12px;
+    }
+
+    .header-brand {
+        display: none;
+    }
+
+    .header-navigation {
+        margin-left: auto;
+        gap: 5px;
+    }
+
+    .popup {
+        position: fixed;
+        top: 80px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+    }
+
+    .popup::before {
+        display: none;
+    }
+
+    .popup-scroll {
+        max-height: 60vh;
+    }
+
+    .main-content {
+        margin: 30px 12px;
+        padding: 20px;
+    }
+}

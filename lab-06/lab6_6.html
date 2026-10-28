@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 6 - Завдання 6</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body class="page">
+
+    <header class="header">
+        <div class="header-content">
+
+            <div class="header-brand">Web Applications</div>
+
+            <nav class="header-navigation" aria-label="Верхня навігація">
+                <a class="header-link" href="#mail">Mail</a>
+                <a class="header-link" href="#images">Images</a>
+
+                <!-- Контейнер попапу -->
+                <div class="popup-shell">
+
+                    <!-- Кнопка відкривання та закривання попапу -->
+                    <input
+                        class="popup-toggle"
+                        type="checkbox"
+                        aria-label="Відкрити або закрити меню застосунків"
+                    >
+
+                    <span class="popup-trigger" aria-hidden="true">
+                        <span class="grid-icon">
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                            <span class="grid-dot"></span>
+                        </span>
+                    </span>
+
+                    <!-- Спливаюче вікно -->
+                    <div class="popup">
+
+                        <div class="popup-scroll"
+                             tabindex="0"
+                             aria-label="Прокручуваний список застосунків">
+
+                            <!-- Початкові 12 застосунків -->
+                            <div class="apps-grid">
+
+                                <a class="app-item" href="#calendar">
+                                    <span class="app-icon" aria-hidden="true">🗓️</span>
+                                    <span class="app-name">Calendar</span>
+                                </a>
+
+                                <a class="app-item" href="#mail">
+                                    <span class="app-icon" aria-hidden="true">✉️</span>
+                                    <span class="app-name">Mail</span>
+                                </a>
+
+                                <a class="app-item" href="#news">
+                                    <span class="app-icon" aria-hidden="true">📰</span>
+                                    <span class="app-name">News</span>
+                                </a>
+
+                                <a class="app-item" href="#map">
+                                    <span class="app-icon" aria-hidden="true">🗺️</span>
+                                    <span class="app-name">Map</span>
+                                </a>
+
+                                <a class="app-item" href="#files">
+                                    <span class="app-icon" aria-hidden="true">📁</span>
+                                    <span class="app-name">Files</span>
+                                </a>
+
+                                <a class="app-item" href="#contacts">
+                                    <span class="app-icon" aria-hidden="true">📇</span>
+                                    <span class="app-name">Contacts</span>
+                                </a>
+
+                                <a class="app-item" href="#translate">
+                                    <span class="app-icon" aria-hidden="true">🌐</span>
+                                    <span class="app-name">Translate</span>
+                                </a>
+
+                                <a class="app-item" href="#videos">
+                                    <span class="app-icon" aria-hidden="true">🎬</span>
+                                    <span class="app-name">Videos</span>
+                                </a>
+
+                                <a class="app-item" href="#search">
+                                    <span class="app-icon" aria-hidden="true">🔎</span>
+                                    <span class="app-name">Search</span>
+                                </a>
+
+                                <a class="app-item" href="#photos">
+                                    <span class="app-icon" aria-hidden="true">🖼️</span>
+                                    <span class="app-name">Photos</span>
+                                </a>
+
+                                <a class="app-item" href="#apps">
+                                    <span class="app-icon" aria-hidden="true">🎨</span>
+                                    <span class="app-name">Apps</span>
+                                </a>
+
+                                <a class="app-item" href="#documents">
+                                    <span class="app-icon" aria-hidden="true">📄</span>
+                                    <span class="app-name">Documents</span>
+                                </a>
+
+                            </div>
+
+                            <!-- Кнопка More -->
+                            <div class="more-control">
+
+                                <input
+                                    class="more-toggle"
+                                    type="checkbox"
+                                    aria-label="Показати або приховати додаткові застосунки"
+                                >
+
+                                <span class="more-label" aria-hidden="true">
+                                    <span class="more-open">More</span>
+                                    <span class="more-close">Less</span>
+                                </span>
+
+                            </div>
+
+                            <!-- Додаткові 6 застосунків -->
+                            <div class="extra-grid">
+
+                                <a class="app-item" href="#chat">
+                                    <span class="app-icon" aria-hidden="true">💬</span>
+                                    <span class="app-name">Chat</span>
+                                </a>
+
+                                <a class="app-item" href="#classroom">
+                                    <span class="app-icon" aria-hidden="true">🎓</span>
+                                    <span class="app-name">Classroom</span>
+                                </a>
+
+                                <a class="app-item" href="#collection">
+                                    <span class="app-icon" aria-hidden="true">🔖</span>
+                                    <span class="app-name">Collection</span>
+                                </a>
+
+                                <a class="app-item" href="#mars">
+                                    <span class="app-icon" aria-hidden="true">🔴</span>
+                                    <span class="app-name">Mars</span>
+                                </a>
+
+                                <a class="app-item" href="#blogs">
+                                    <span class="app-icon" aria-hidden="true">📋</span>
+                                    <span class="app-name">Blogs</span>
+                                </a>
+
+                                <a class="app-item" href="#promos">
+                                    <span class="app-icon" aria-hidden="true">📣</span>
+                                    <span class="app-name">Promos</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a class="header-link header-notification"
+                   href="#notifications"
+                   aria-label="Сповіщення">🔔</a>
+
+                <a class="header-avatar"
+                   href="#profile"
+                   aria-label="Профіль користувача">👤</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="page-title">Лабораторна робота №6</h1>
+        <h2 class="page-subtitle">Завдання 6 — Popup</h2>
+
+        <p class="page-description">
+            Натисніть на значок із дев'яти квадратів
+            у верхній панелі, щоб відкрити меню застосунків.
+        </p>
+
+        <p class="page-description">
+            Натисніть More для відображення додаткових
+            застосунків та прокручування списку.
+        </p>
+
+        <p class="page-description">
+            Для взаємодії з клавіатури використовуйте
+            клавіші Tab, Space та стрілки.
+        </p>
+    </main>
+
+</body>
+</html>
