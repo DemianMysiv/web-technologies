@@ -1,0 +1,61 @@
+
+/* Контейнер має position: relative, щоб блоки позиціонувались відносно нього */
+.container-task1 {
+    position: relative;
+    width: 600px;  /* Загальна ширина макета */
+    height: 350px; /* Загальна висота макета */
+    margin: 50px auto; 
+    border: 1px solid #ccc; /* Тонка рамка навколо всього контейнера */
+    background-color: #fff;
+}
+
+/* Спільні стилі для всіх блоків */
+.block {
+    position: absolute; /* Абсолютне позиціювання */
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #000; /* Чорна рамка для блоків */
+    padding-top: 15px;      /* Відступ для тексту зверху */
+    box-sizing: border-box; /* Враховуємо рамки в розмірах */
+}
+
+/* Спільні стилі для тексту */
+.block p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Блок 1 - Синій (лівий верхній) */
+.box-1 {
+    background-color: #5b8fd6; /* Синій колір */
+    top: 20px;
+    left: 20px;
+    width: 270px;
+    height: 180px;
+    z-index: 2; /* Задаємо z-index, щоб відповідати умовам */
+}
+
+/* Блок 2 - Синій (правий верхній) */
+.box-2 {
+    background-color: #5b8fd6; /* Той самий синій колір */
+    top: 20px;
+    right: 20px;
+    width: 270px;
+    height: 180px;
+    z-index: 2;
+}
+
+/* Блок 3 - Фіолетовий (нижній на всю ширину) */
+.box-3 {
+    background-color: #6a527c; /* Фіолетовий колір */
+    bottom: 20px;
+    left: 20px;
+    width: 560px; /* Займає ширину обох верхніх блоків + відступ між ними */
+    height: 100px;
+    z-index: 1; /* Нижній шар (на випадок перекриття) */
+    align-items: center; /* Центруємо текст по вертикалі */
+    padding-top: 0;      /* Скидаємо padding-top */
+}
