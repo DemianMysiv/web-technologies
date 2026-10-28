@@ -1,0 +1,362 @@
+
+/* ========================================
+   1. Загальні стилі
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+
+/* ========================================
+   2. Область погодного віджета
+   ======================================== */
+
+.weather-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.weather-widget {
+    position: relative;
+    width: 760px;
+    height: 580px;
+    max-width: 100%;
+    overflow: hidden;
+
+    background: linear-gradient(
+        110deg,
+        #a6a6a6 0%,
+        #c8c8c8 100%
+    );
+
+    border: 10px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ========================================
+   3. Основна чорна картка
+   ======================================== */
+
+.weather-card {
+    position: absolute;
+    top: 20px;
+    left: 105px;
+    width: 405px;
+    height: 430px;
+
+    background-color: #050505;
+    color: white;
+
+    box-shadow: 8px 12px 18px rgba(0, 0, 0, 0.35);
+    z-index: 2;
+}
+
+.weather-date {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: #d4d4d4;
+    font-size: 13px;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+.temperature {
+    position: absolute;
+    left: 25px;
+    bottom: 8px;
+
+    color: white;
+    font-size: 115px;
+    font-weight: bold;
+    line-height: 1;
+    z-index: 4;
+}
+
+.weather-description {
+    position: absolute;
+    right: 20px;
+    bottom: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    color: #dddddd;
+    font-size: 14px;
+    text-align: right;
+    opacity: 0.75;
+}
+
+/* ========================================
+   4. Хмара з декількох CSS-шарів
+   ======================================== */
+
+.cloud {
+    position: absolute;
+    top: 115px;
+    left: 230px;
+    width: 460px;
+    height: 230px;
+
+    z-index: 5;
+    pointer-events: none;
+
+    filter: drop-shadow(
+        -12px 20px 15px rgba(0, 0, 0, 0.35)
+    );
+}
+
+.cloud-part {
+    position: absolute;
+    border-radius: 50%;
+
+    background: radial-gradient(
+        ellipse at 42% 28%,
+        #ffffff 0%,
+        #f5f5f5 24%,
+        #d0d0d0 54%,
+        #858585 78%,
+        transparent 100%
+    );
+
+    filter: blur(8px);
+}
+
+.cloud-part-1 {
+    width: 170px;
+    height: 145px;
+    top: 65px;
+    left: 5px;
+}
+
+.cloud-part-2 {
+    width: 200px;
+    height: 180px;
+    top: 20px;
+    left: 90px;
+}
+
+.cloud-part-3 {
+    width: 225px;
+    height: 190px;
+    top: 0;
+    left: 165px;
+}
+
+.cloud-part-4 {
+    width: 160px;
+    height: 140px;
+    top: 65px;
+    left: 295px;
+}
+
+.cloud-part-5 {
+    width: 230px;
+    height: 130px;
+    top: 100px;
+    left: 105px;
+}
+
+.cloud-base {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+
+    width: 420px;
+    height: 105px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        to bottom,
+        #f7f7f7 0%,
+        #c9c9c9 38%,
+        #757575 70%,
+        transparent 100%
+    );
+
+    filter: blur(16px);
+    opacity: 0.85;
+}
+
+/* ========================================
+   5. Напівпрозорі кнопки навігації
+   ======================================== */
+
+.weather-navigation {
+    position: absolute;
+    top: 150px;
+    left: 25px;
+
+    display: flex;
+    z-index: 8;
+}
+
+.nav-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+
+    border: 1px solid rgba(40, 40, 40, 0.35);
+    background-color: rgba(200, 200, 200, 0.6);
+
+    cursor: pointer;
+    opacity: 0.8;
+
+    transition:
+        background-color 0.2s,
+        opacity 0.2s;
+}
+
+.nav-button:hover {
+    background-color: rgba(245, 245, 245, 0.85);
+    opacity: 1;
+}
+
+.nav-button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.nav-button:active {
+    background-color: rgba(130, 130, 130, 0.9);
+}
+
+/* Стрілки створені засобами CSS */
+
+.arrow {
+    position: relative;
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    border-top: 3px solid #242424;
+    border-right: 3px solid #242424;
+}
+
+.arrow-left {
+    transform: rotate(-135deg);
+    margin-left: 15px;
+}
+
+.arrow-right {
+    transform: rotate(45deg);
+    margin-right: 15px;
+}
+
+/* ========================================
+   6. Нижня панель прогнозу
+   ======================================== */
+
+.forecast-panel {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 405px;
+    height: 175px;
+    padding: 50px 10px 10px;
+
+    background-color: rgba(242, 242, 242, 0.75);
+
+    box-shadow: 8px 8px 0 rgba(45, 45, 45, 0.35);
+    z-index: 1;
+}
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 55px;
+    padding: 8px 0;
+}
+
+.day-name {
+    font-size: 14px;
+    color: #777777;
+}
+
+.day-temp {
+    font-size: 30px;
+    font-weight: 600;
+    color: #222222;
+}
+
+.forecast-day:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ========================================
+   7. Прихована підказка
+   ======================================== */
+
+.weather-hint {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: block;
+    max-width: 190px;
+    padding: 12px;
+
+    background-color: #333333;
+    color: white;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    opacity: 0;
+    visibility: hidden;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+    transition: opacity 0.3s;
+}
+
+.weather-widget:hover .weather-hint {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ========================================
+   8. Адаптація для невеликих екранів
+   ======================================== */
+
+@media (max-width: 800px) {
+    .weather-page {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .weather-widget {
+        flex: 0 0 740px;
+        max-width: none;
+    }
+}

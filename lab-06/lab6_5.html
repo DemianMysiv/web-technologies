@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 6 - Завдання 5</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+    <main class="weather-page">
+
+        <div class="weather-widget">
+
+            <!-- Основна темна картка погоди -->
+            <div class="weather-card">
+
+                <div class="weather-date">
+                    <span>MONDAY</span>
+                    <span>OCTOBER</span>
+                </div>
+
+                <div class="temperature">17</div>
+
+                <div class="weather-description">
+                    <span>Хмарно</span>
+                    <span>Вологість: 65%</span>
+                </div>
+
+            </div>
+
+            <!-- Декоративна хмара -->
+            <div class="cloud" aria-hidden="true">
+                <div class="cloud-part cloud-part-1"></div>
+                <div class="cloud-part cloud-part-2"></div>
+                <div class="cloud-part cloud-part-3"></div>
+                <div class="cloud-part cloud-part-4"></div>
+                <div class="cloud-part cloud-part-5"></div>
+                <div class="cloud-base"></div>
+            </div>
+
+            <!-- Напівпрозорі кнопки -->
+            <div class="weather-navigation">
+                <button class="nav-button nav-prev"
+                        type="button"
+                        aria-label="Попередній день">
+                    <span class="arrow arrow-left"></span>
+                </button>
+
+                <button class="nav-button nav-next"
+                        type="button"
+                        aria-label="Наступний день">
+                    <span class="arrow arrow-right"></span>
+                </button>
+            </div>
+
+            <!-- Нижня панель прогнозу -->
+            <div class="forecast-panel">
+
+                <div class="forecast-day">
+                    <span class="day-name">Mon</span>
+                    <span class="day-temp">17°</span>
+                </div>
+
+                <div class="forecast-day">
+                    <span class="day-name">Tue</span>
+                    <span class="day-temp">19°</span>
+                </div>
+
+                <div class="forecast-day">
+                    <span class="day-name">Wed</span>
+                    <span class="day-temp">16°</span>
+                </div>
+
+                <div class="forecast-day">
+                    <span class="day-name">Thu</span>
+                    <span class="day-temp">18°</span>
+                </div>
+
+                <div class="forecast-day">
+                    <span class="day-name">Fri</span>
+                    <span class="day-temp">21°</span>
+                </div>
+
+            </div>
+
+            <!-- Підказка для демонстрації видимості -->
+            <div class="weather-hint">
+                Приклад багатошарового погодного віджета
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
+
