@@ -1,0 +1,142 @@
+[
+  {
+    "lesson": 1,
+    "name": "01 - Introduction to What The FlexBox",
+    "html_size": 682,
+    "css_size": 646,
+    "css_examples": 0
+  },
+  {
+    "lesson": 2,
+    "name": "02 - Introduction to Flexbox",
+    "html_size": 552,
+    "css_size": 902,
+    "css_examples": 0
+  },
+  {
+    "lesson": 3,
+    "name": "03 - Working with Flexbox flex-direction",
+    "html_size": 552,
+    "css_size": 1055,
+    "css_examples": 6
+  },
+  {
+    "lesson": 4,
+    "name": "04 - Wrapping elements with Flexbox",
+    "html_size": 552,
+    "css_size": 1013,
+    "css_examples": 4
+  },
+  {
+    "lesson": 5,
+    "name": "05 - Flexbox Ordering",
+    "html_size": 552,
+    "css_size": 999,
+    "css_examples": 4
+  },
+  {
+    "lesson": 6,
+    "name": "06 - Flexbox Alignment and Centering with justify-content",
+    "html_size": 552,
+    "css_size": 1002,
+    "css_examples": 4
+  },
+  {
+    "lesson": 7,
+    "name": "07 - Alignment and Centering with align-items",
+    "html_size": 552,
+    "css_size": 1017,
+    "css_examples": 8
+  },
+  {
+    "lesson": 8,
+    "name": "08 - Alignment and Centering with align-content",
+    "html_size": 552,
+    "css_size": 1067,
+    "css_examples": 9
+  },
+  {
+    "lesson": 9,
+    "name": "09 - Alignment and Centering with align-self",
+    "html_size": 552,
+    "css_size": 1150,
+    "css_examples": 4
+  },
+  {
+    "lesson": 10,
+    "name": "10 - Understanding Flexbox sizing with flex property",
+    "html_size": 458,
+    "css_size": 961,
+    "css_examples": 5
+  },
+  {
+    "lesson": 11,
+    "name": "11 - Understanding flex-grow flex-shrink and flex-basis",
+    "html_size": 552,
+    "css_size": 1122,
+    "css_examples": 16
+  },
+  {
+    "lesson": 12,
+    "name": "12 - Flex-basis and wrapping work together",
+    "html_size": 552,
+    "css_size": 1122,
+    "css_examples": 4
+  },
+  {
+    "lesson": 13,
+    "name": "13 - Cross Browser Flexbox Support and Autoprefixer",
+    "html_size": 371,
+    "css_size": 450,
+    "css_examples": 1
+  },
+  {
+    "lesson": 14,
+    "name": "14 - Pure Flexbox navigation code along",
+    "html_size": 1873,
+    "css_size": 1537,
+    "css_examples": 4
+  },
+  {
+    "lesson": 15,
+    "name": "15 - Mobile content reordering with Flexbox",
+    "html_size": 1953,
+    "css_size": 2256,
+    "css_examples": 4
+  },
+  {
+    "lesson": 16,
+    "name": "16 - Nesting Flexbox for vertical and horizontal centering",
+    "html_size": 844,
+    "css_size": 1017,
+    "css_examples": 8
+  },
+  {
+    "lesson": 17,
+    "name": "17 - Flexbox Pricing Grid",
+    "html_size": 1127,
+    "css_size": 949,
+    "css_examples": 6
+  },
+  {
+    "lesson": 18,
+    "name": "18 - Flexbox equal height columns and leftover elements",
+    "html_size": 2090,
+    "css_size": 423,
+    "css_examples": 7
+  },
+  {
+    "lesson": 19,
+    "name": "19 - Flexbox single line form",
+    "html_size": 866,
+    "css_size": 752,
+    "css_examples": 5
+  },
+  {
+    "lesson": 20,
+    "name": "20 - Create a mobile app layout with Flexbox",
+    "html_size": 2486,
+    "css_size": 1796,
+    "css_examples": 7
+  }
+]

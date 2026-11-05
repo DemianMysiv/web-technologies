@@ -1,0 +1,9 @@
+/* Reconstructed from the course screenshots, frames 121–137. */
+html { box-sizing:border-box; }
+*, *:before, *:after {box-sizing:inherit;}
+body { margin:0; font-family:Arial,sans-serif; background:linear-gradient(110deg,#b361c8,#2376ae); min-height:100vh; }
+.wrapper { max-width:1000px; padding:50px; margin:0 auto; }
+img { max-width:100%; display:block; }
+a { color:white; text-decoration:none; font-size:15px; background:rgba(0,0,0,.2); padding:20px 5px; }
+a:hover { background:rgba(0,0,0,.4); }
+.slider-nav ul {list-style:none;margin:0;padding:0;display:flex;}

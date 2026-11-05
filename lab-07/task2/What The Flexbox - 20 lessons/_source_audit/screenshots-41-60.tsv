@@ -1,0 +1,21 @@
+#	Файл скріншота	Тема/спостереження
+41	Знімок екрана 2026-11-04 201237.png	align-content закоментовано
+42	Знімок екрана 2026-11-04 201245.png	width:33.333%; align-content закоментовано
+43	Знімок екрана 2026-11-04 201315.png	flex-wrap:wrap; align-content:stretch
+44	Знімок екрана 2026-11-04 201324.png	align-content:flex-start
+45	Знімок екрана 2026-11-04 201344.png	HTML box2: 2<br> :)
+46	Знімок екрана 2026-11-04 201400.png	align-content:space-around
+47	Знімок екрана 2026-11-04 201404.png	align-content:center
+48	Знімок екрана 2026-11-04 201422.png	align-content:center + text-align:center
+49	Знімок екрана 2026-11-04 201438.png	justify-content:center + align-content:center
+50	Знімок екрана 2026-11-04 201551.png	align-self почато вводити для .box9
+51	Знімок екрана 2026-11-04 201602.png	align-self:flex-end
+52	Знімок екрана 2026-11-04 201619.png	align-self:center
+53	Знімок екрана 2026-11-04 201622.png	align-self:baseline
+54	Знімок екрана 2026-11-04 201631.png	align-self:stretch
+55	Знімок екрана 2026-11-04 201715.png	сайзинг: 6 блоків one..six; display:flex
+56	Знімок екрана 2026-11-04 201746.png	flex:1 для .box; flex:2 для .box2
+57	Знімок екрана 2026-11-04 201757.png	flex:1 для .box; flex:2 для .box2
+58	Знімок екрана 2026-11-04 201809.png	flex:3 для .box5, крім flex:1/2
+59	Знімок екрана 2026-11-04 201830.png	після видалення flex:3 залишено flex:1/2
+60	Знімок екрана 2026-11-04 201852.png	титр наступного уроку (flex-grow/shrink/basis)

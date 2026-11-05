@@ -1,0 +1,9 @@
+/* Base styling recovered from the screenshots. */
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+body { margin: 0; font-family: Arial, sans-serif; }
+.cover { min-height: 100vh; background: linear-gradient(125deg,#a76fc8,#307cb3); display: flex; justify-content: center; align-items: center; }
+.flex-form { display: flex; border: 20px solid rgba(0,0,0,0.3); border-radius: 5px; }
+.flex-form > * { border: 0; padding: 10px; background: white; line-height: 50px; font-size: 20px; border-radius: 0; outline: 0; border-right: 1px solid rgba(0,0,0,0.2); -webkit-appearance: none; }
+.flex-form > *:last-child { border-right: 0; background: #ff5a5f; color: white; cursor: pointer; }
+input[type="search"] { flex-basis: 500px; }

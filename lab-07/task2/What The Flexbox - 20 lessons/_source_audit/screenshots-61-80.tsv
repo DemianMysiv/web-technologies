@@ -1,0 +1,21 @@
+#	Файл скріншота	Тема/спостереження
+61	Знімок екрана 2026-11-04 201948.png	flex:1 та незаповнені flex-grow/flex-shrink/flex-basis
+62	Знімок екрана 2026-11-04 201951.png	блок .box; три порожні властивості (проміжний кадр)
+63	Знімок екрана 2026-11-04 202002.png	flex-grow:1
+64	Знімок екрана 2026-11-04 202008.png	flex-grow:1 і flex-shrink:1
+65	Знімок екрана 2026-11-04 203829.png	обидва блоки flex-basis:400px
+66	Знімок екрана 2026-11-04 203847.png	grow 10:1; shrink 5:1; basis=400px
+67	Знімок екрана 2026-11-04 203902.png	скорочений запис flex:10 5 400px vs flex:1 1 400px
+68	Знімок екрана 2026-11-04 204005.png	flex-wrap:wrap і flex-basis:500px
+69	Знімок екрана 2026-11-04 204022.png	flex-wrap:wrap і flex-direction:column; властивості блоків закоментовані
+70	Знімок екрана 2026-11-04 204039.png	column+wrap+goldenrod; flex-basis:250px; box3 grow:5
+71	Знімок екрана 2026-11-04 204120.png	додано .box4 flex-basis:100px
+72	Знімок екрана 2026-11-04 204204.png	Autoprefixer Online: автоматичні CSS-префікси; незакінчений align-content
+73	Знімок екрана 2026-11-04 204224.png	термінал: node -v і ll; введено node v0.12.2
+74	Знімок екрана 2026-11-04 204231.png	команда npm install gulp -g; package.json після npm init
+75	Знімок екрана 2026-11-04 204256.png	gulpfile.js task styles: src -> autoprefixer -> dest
+76	Знімок екрана 2026-11-04 204321.png	package.json на екрані
+77	Знімок екрана 2026-11-04 204331.png	index.html базова структура і link build/styles.css
+78	Знімок екрана 2026-11-04 204336.png	обрізаний кадр index.html
+79	Знімок екрана 2026-11-04 204342.png	повна структура проєкту з build/, css/, node_modules/
+80	Знімок екрана 2026-11-04 204348.png	gulpfile.js з task styles; початок нового рядка gulp (незавершений)

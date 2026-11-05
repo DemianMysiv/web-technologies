@@ -1,0 +1,21 @@
+#	Файл скріншота	Тема/спостереження
+81	Знімок екрана 2026-11-04 204421.png	Gulp watch task: watch css/styles.css -> styles
+82	Знімок екрана 2026-11-04 204431.png	порівняння джерельного CSS і build/styles.css
+83	Знімок екрана 2026-11-04 204436.png	порівняння autoprefixer generated declarations
+84	Знімок екрана 2026-11-04 204506.png	index.html використовує build/styles.css
+85	Знімок екрана 2026-11-04 204608.png	HTML flex-nav з 6 пунктами і 4 social links
+86	Знімок екрана 2026-11-04 204617.png	рендер горизонтального меню й сторінки
+87	Знімок екрана 2026-11-04 204635.png	базовий CSS gradient, box-sizing, anchor
+88	Знімок екрана 2026-11-04 204642.png	стилі посилань і wrapper
+89	Знімок екрана 2026-11-04 204649.png	wrapper, початок flex-nav ul
+90	Знімок екрана 2026-11-04 204654.png	flex-nav ul, display:flex закоментований
+91	Знімок екрана 2026-11-04 204733.png	flex-nav ul, додавання display:flex
+92	Знімок екрана 2026-11-04 204746.png	li flex:3; social flex:1
+93	Знімок екрана 2026-11-04 204752.png	flex:3 та flex:1, пусті media
+94	Знімок екрана 2026-11-04 204800.png	media max-width:1000px, проба flex-direction:column
+95	Знімок екрана 2026-11-04 204808.png	media max-width:1000px, flex-wrap:wrap
+96	Знімок екрана 2026-11-04 204816.png	media max-width:1000px li flex:1 1 50%
+97	Знімок екрана 2026-11-04 204828.png	media social flex:1 1 25%; max-width:500px li flex-basis:100%
+98	Знімок екрана 2026-11-04 204917.png	готовий горизонтальний дизайн меню та hero
+99	Знімок екрана 2026-11-04 204947.png	HTML меню та блоків сторінки
+100	Знімок екрана 2026-11-04 205054.png	повтор flex-basis 400px на двох блоках
