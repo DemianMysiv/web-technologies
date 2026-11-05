@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-app">
+        <!-- Main Weather Section -->
+        <header class="current-weather">
+            <h1 class="city">New York, NY</h1>
+            <p class="date">Tuesday, April 15th</p>
+            <p class="status">Overcast</p>
+            
+            <div class="main-details">
+                <div class="temp-display">
+                    <img src="weather_00_current_overcast.png" alt="Overcast" class="main-icon">
+                    <span class="temperature">58</span>
+                    <span class="unit">°F</span>
+                </div>
+                
+                <div class="extra-info">
+                    <p>Precipitation: 100%</p>
+                    <p>Humidity: 97%</p>
+                    <p>Wind: 4 mph SW</p>
+                    <p>Pollen Count: 36</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Daily Forecast List -->
+        <ul class="forecast-list">
+            <!-- Day 1 -->
+            <li class="forecast-item">
+                <span class="day">Today</span>
+                <img src="weather_01_today.png" alt="Rain Lightning" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">68°</span>
+                    <span class="low">36°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 2 -->
+            <li class="forecast-item">
+                <span class="day">Wednesday</span>
+                <img src="weather_02_wednesday.png" alt="Sunny" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">50°</span>
+                    <span class="low">39°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 3 -->
+            <li class="forecast-item">
+                <span class="day">Thursday</span>
+                <img src="weather_03_thursday.png" alt="Sunny" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">55°</span>
+                    <span class="low">39°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 4 -->
+            <li class="forecast-item">
+                <span class="day">Friday</span>
+                <img src="weather_04_friday.png" alt="Partly Cloudy" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">54°</span>
+                    <span class="low">43°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 5 -->
+            <li class="forecast-item">
+                <span class="day">Saturday</span>
+                <img src="weather_05_saturday.png" alt="Rain" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">64°</span>
+                    <span class="low">46°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 6 -->
+            <li class="forecast-item">
+                <span class="day">Sunday</span>
+                <img src="weather_06_sunday.png" alt="Rain" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">64°</span>
+                    <span class="low">50°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+            <!-- Day 7 -->
+            <li class="forecast-item">
+                <span class="day">Monday</span>
+                <img src="weather_07_monday.png" alt="Partly Cloudy" class="forecast-icon">
+                <div class="temp-range">
+                    <span class="high">61°</span>
+                    <span class="low">50°</span>
+                </div>
+                <span class="pollen">Pollen 36</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

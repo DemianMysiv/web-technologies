@@ -1,0 +1,139 @@
+:root {
+    --text-dark: #333333;
+    --text-light: #777777;
+    --border-color: #e0e0e0;
+    --bg-color: #ffffff;
+}
+
+/* Reset / Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.weather-app {
+    background-color: var(--bg-color);
+    width: 100%;
+    max-width: 400px; /* Ширина як у мобільного додатку */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* --- Header Section --- */
+.current-weather {
+    padding: 20px;
+}
+
+.city {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.date, .status {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.main-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.temp-display {
+    display: flex;
+    align-items: flex-start; /* Щоб градус був зверху */
+}
+
+.main-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    /* Тут можна додати фільтри, якщо іконки чорні, а треба кольорові */
+}
+
+.temperature {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.unit {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+.extra-info {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* --- Forecast List Section --- */
+.forecast-list {
+    list-style: none;
+    border-top: 1px solid var(--border-color);
+}
+
+.forecast-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Видаляємо бордер у останнього елемента */
+.forecast-item:last-child {
+    border-bottom: none;
+}
+
+.day {
+    flex: 1; /* Займає доступний простір зліва */
+    font-weight: 500;
+}
+
+.forecast-icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+}
+
+.temp-range {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px; /* Фіксована ширина для вирівнювання */
+}
+
+.high {
+    font-weight: 400;
+}
+
+.low {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.pollen {
+    flex: 1; /* Займає простір справа */
+    text-align: right;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
